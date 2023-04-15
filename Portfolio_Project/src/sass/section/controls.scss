@@ -1,0 +1,84 @@
+.sec-controls {
+	position: relative;
+	padding-top: 90px;
+	
+	&__overlay {
+		position: absolute;
+		top: -1px;
+		z-index: -1;
+		height: 400px;
+		width: 100%;
+		background-color: $bgColorTwo;
+	}
+	
+	&__wrapper {
+		padding: 0 222px;
+	}
+	
+	&__title {
+		margin-bottom: 12px;
+		font-family: 'Yeseva One', sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $fontColorThird;
+	}
+	
+	&__block {
+		height: 28px;
+		width: 32px;
+		margin: 0 auto 30px;
+	}
+	
+	&__media {
+		margin-bottom: 75px;
+	}
+	
+	&__form {
+		margin: 0 23px;
+	}
+	
+	@media (max-width: $screen-lg) {
+		
+		&__wrapper {
+			padding: 0 100px;
+		}
+	}
+	
+	@media (max-width: $screen-md) {
+		
+		&__wrapper {
+			padding: 0;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		min-height: 825px;
+		padding-top: 58px;
+		background-color: $bgColorTwo;
+		
+		&__overlay {
+			display: none;
+		}
+		
+		&__title {
+			margin-bottom: 20px;
+			font-size: 22px;
+			line-height: 30px;
+		}
+		
+		&__block {
+			margin: 0 auto 40px;
+		}
+		
+		&__media {
+			margin-bottom: 78px;
+		}
+		
+		&__form {
+			margin: 0;
+		}
+	}
+}

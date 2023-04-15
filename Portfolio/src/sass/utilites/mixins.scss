@@ -1,0 +1,27 @@
+@mixin line-before {
+	content: '';
+	position: absolute;
+	top: 110%;
+	left: 0;
+	z-index: 1;
+	height: 2px;
+	width: 40px;
+	background-color: $colorMain;
+}
+
+@mixin line-after {
+	content: '';
+	position: absolute;
+	top: 110%;
+	left: 0;
+	height: 2px;
+	width: 127px;
+	background-color: #353535;
+}
+
+@mixin title {
+	position: relative;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 35px;
+}

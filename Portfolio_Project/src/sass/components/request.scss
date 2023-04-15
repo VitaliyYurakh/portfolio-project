@@ -1,0 +1,36 @@
+.request {
+	min-height: 100%;
+	padding: 27px 49px;
+	background: $bgColorTwo;
+	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+	
+	&__title {
+		margin-bottom: 39px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		text-align: center;
+		color: $fontColorThird;
+	}
+	
+	&__wrapper {
+		margin-bottom: 10px;
+	}
+	
+	&__input {
+		margin-bottom: 48px;
+		
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	
+	&__checkbox {
+		margin-bottom: 45px;
+	}
+	
+	&__actions {
+		display: flex;
+		justify-content: end;
+	}
+}

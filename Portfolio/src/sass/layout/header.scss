@@ -1,0 +1,29 @@
+.header {
+	padding-top: 46px;
+	
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	&__link {
+		display: block;
+		cursor: pointer;
+	}
+	
+	&__hamburger {
+		display: none;
+	}
+	
+	@media (max-width: $screen-sm) {
+		
+		&__hamburger {
+			display: block;
+		}
+		
+		&__nav {
+			display: none;
+		}
+	}
+}

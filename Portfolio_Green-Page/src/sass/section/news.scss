@@ -1,0 +1,24 @@
+.sec-news {
+	min-height: 742px;
+	padding: 80px 0 50px;
+	
+	&__title {
+		@include section-title;
+		margin-bottom: 23px;
+	}
+	
+	&__divider {
+		@include section-divider;
+		margin: 0 auto 29px;
+	}
+	
+	&__subtitle {
+		@include section-subtitle;
+		margin-bottom: 30px;
+	}
+	
+	&__wrapper {
+		width: 100%;
+		min-height: 472px;
+	}
+}

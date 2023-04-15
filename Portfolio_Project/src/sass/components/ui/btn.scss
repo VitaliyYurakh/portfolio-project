@@ -1,0 +1,74 @@
+.btn {
+	background: $bgColorTree;
+	border-radius: 2px;
+	border: none;
+	text-transform: uppercase;
+	color: $fontColorThird;
+	cursor: pointer;
+	transition: 0.2s;
+	
+	&:hover {
+		transform: scale(1.1);
+	}
+	
+	&__header {
+		padding: 11px 33px;
+		font-style: italic;
+		font-size: 11px;
+		line-height: 15px;
+		box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+	}
+	
+	&__promo {
+		padding: 20px 42px;
+		font-style: italic;
+		font-size: 11px;
+		line-height: 15px;
+		box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
+	}
+	
+	&__form {
+		padding: 15px 75px;
+		font-size: 13px;
+		line-height: 27px;
+		box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
+	}
+	
+	&__transparent {
+		padding: 20px 23px;
+		border: 1px solid #FFFFFF;
+		font-style: italic;
+		font-size: 11px;
+		line-height: 15px;
+		box-shadow: none;
+		background: transparent;
+	}
+	
+	&__request {
+		padding: 19px 39px;
+		font-size: 13px;
+		line-height: 21px;
+	}
+	
+	&__question {
+		padding: 15px 54px;
+		font-size: 13px;
+		line-height: 27px;
+	}
+	
+	@media (max-width: $screen-sm) {
+		
+		&__form,
+		&__question {
+			width: 100%;
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&__promo,
+		&__transparent {
+			width: 100%;
+		}
+	}
+}

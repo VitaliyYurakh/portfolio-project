@@ -1,0 +1,45 @@
+.input {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	
+	&__field {
+		flex: 1 1 auto;
+		padding: 10px 0 10px;
+		border: none;
+		background: transparent;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		color: #FFFFFF;
+		
+		&::placeholder {
+			color: #FFFFFF;
+		}
+	}
+	
+	&__icons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1 0 30px;
+		max-width: 30px;
+		height: 30px;
+		
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	
+	&__widgets {
+		
+		.input__field {
+			color: #111111;
+			
+			&::placeholder {
+				color: #111111;
+			}
+		}
+	}
+}

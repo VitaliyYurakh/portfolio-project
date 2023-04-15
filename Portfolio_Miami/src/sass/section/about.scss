@@ -1,0 +1,48 @@
+.about {
+	padding-top: 104px;
+	
+	&__wrapper {
+		display: flex;
+	}
+	
+	&__block {
+		flex: 1 1 50%;
+	}
+	
+	&__title {
+		font-weight: $fontWeightTwo;
+		font-size: $fontSizeTree;
+		line-height: $lineHeightTree;
+		letter-spacing: -1.5px;
+		color: $fontColorFour;
+		
+		span {
+			color: $fontColorTwo;
+		}
+	}
+	
+	&__subtitle {
+		font-weight: $fontWeightTwo;
+		font-size: $fontSizeFour;
+		line-height: $lineHeightFour;
+		color: $fontColorTwo;
+	}
+	
+	&__info {
+		font-weight: $fontWeightTwo;
+	}
+	
+	@media (max-width: $screen-sm) {
+		padding-top: 64px;
+		
+		&__wrapper {
+			flex-direction: column;
+		}
+		
+		&__title {
+			margin-bottom: 48px;
+			font-size: $fontSizeNine;
+			line-height: $lineHeightTen;
+		}
+	}
+}

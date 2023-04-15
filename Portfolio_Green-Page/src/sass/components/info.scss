@@ -1,0 +1,38 @@
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 12px 10px;
+	
+	&__search,
+	&__catalog {
+		margin-left: auto;
+	}
+	
+	&__search {
+		margin-right: 53px;
+	}
+	
+	&__logo {
+		width: 130px;
+		height: 40px;
+	}
+	
+	@media (max-width: $screen-lg) {
+	
+		&__search {
+			margin-right: 28px;
+		}
+	}
+	
+	@media (max-width: $screen-md) {
+	
+		&__catalog {
+			display: none;
+		}
+		
+		&__search {
+			margin-right: 53px;
+		}
+	}
+}

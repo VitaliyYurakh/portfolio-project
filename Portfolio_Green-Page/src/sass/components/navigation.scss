@@ -1,0 +1,32 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 12px 15px;
+	border-bottom: 1px solid #FFFFFF;
+	
+	&__widgets {
+		border-bottom: none;
+	}
+	
+	&__hamburger {
+		display: none;
+	}
+	
+	@media (max-width: $screen-md) {
+		
+		padding: 4px 12px;
+		
+		&__nav {
+			display: none;
+		}
+		
+		&__list {
+			flex: 1 1 auto;
+		}
+		
+		&__hamburger {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.site {
+  
+  &_overflow {
+    overflow-x: visible;
+  }
+  
+  &__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+    &_overflow {
+      overflow-x: visible;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+  
+  .menu {
+    position: absolute;
+    left: -400px;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    width: 440px;
+    background-color: white;
+    transition: .6s ease-in-out;
+    
+    &.is-Show {
+      left: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+
+}

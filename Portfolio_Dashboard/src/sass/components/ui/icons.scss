@@ -1,0 +1,20 @@
+.icons {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	background: url("../img/icons/arrow-right.svg") center no-repeat;
+	transition: .3s;
+	
+	&__pagination {
+		width: 8px;
+		height: 12px;
+		background: url("../img/icons/pagination_arrow.svg") center no-repeat;;
+	}
+	
+	&__close {
+		width: 24px;
+		height: 24px;
+		background: url("../img/icons/close.svg") center no-repeat;
+	}
+}

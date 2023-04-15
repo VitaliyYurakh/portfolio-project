@@ -1,0 +1,27 @@
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 16px;
+	cursor: pointer;
+	
+	&__line {
+		position: relative;
+		width: 24px;
+		height: 2px;
+		background: #FFFFFF;
+		border-radius: 2px;
+		transition: .3s ease-in-out;
+	}
+	
+	&:hover {
+		
+		.hamburger__line_first {
+			width: 18px;
+		}
+		
+		.hamburger__line_last {
+			width: 12px;
+		}
+	}
+}

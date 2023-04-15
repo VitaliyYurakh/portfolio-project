@@ -1,0 +1,26 @@
+.site {
+
+  &__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #1E1E1E;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 2320px;
+    width: 600px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background: url("../img/bg.png") center center/ cover no-repeat;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+
+}

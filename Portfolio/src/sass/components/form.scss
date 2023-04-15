@@ -1,0 +1,84 @@
+.form {
+	
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -15px;
+	}
+	
+	&__block {
+		flex: 1 1 calc(50% - 30px);
+		max-width: calc(50% - 30px);
+		height: 100%;
+		margin: 0 15px;
+	}
+	
+	&__input {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	
+	&__wrap {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__actions {
+		margin-right: 25px;
+	}
+	
+	&__policy {
+		font-size: 18px;
+		line-height: 27px;
+		color: rgba(255,255,255,.7);
+		
+		& a{
+			color: $fontColorMain;
+			text-decoration: underline;
+		}
+	}
+	
+	&__textarea {
+		min-height: 209px;
+		width: 100%;
+		resize: none;
+		padding: 15px 20px;
+		border: 2px solid #555555;
+		border-radius: 5px;
+		background-color: transparent;
+		font-size: 18px;
+		line-height: 24px;
+		color: $fontColorMain;
+		
+		&::placeholder {
+			font-size: 18px;
+			line-height: 24px;
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		
+		&__wrapper {
+			flex-direction: column;
+			margin: 0 0 15px;
+		}
+		
+		&__block {
+			flex: 1 1 100%;
+			max-width: 100%;
+			margin: 0;
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&__wrap {
+			flex-direction: column;
+		}
+		
+		&__actions {
+			margin: 0 0 15px;
+		}
+	}
+}

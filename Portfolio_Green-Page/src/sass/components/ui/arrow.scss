@@ -1,0 +1,80 @@
+.arrow {
+	position: absolute;
+	top: 53%;
+	z-index: 100;
+	width: 42px;
+	height: 42px;
+	background: #FFFFFF url("../img/icons/arrow.svg") center no-repeat;
+	border: 1px solid #F5F5F5;
+	border-radius: 21px;
+	cursor: pointer;
+	
+	&_prev {
+		left: 15px;
+	}
+	
+	&_next {
+		right: 15px;
+		transform: rotateY(180deg);
+	}
+	
+	&:hover {
+		border: 2px solid rgba(93,114,97,0.5);
+	}
+	
+	&.slick-disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+	
+	&__reading {
+		top: -81px;
+		
+		&_prev {
+			right: 75px;
+		}
+		
+		&_next {
+			right: 15px;
+			transform: rotateY(180deg);
+		}
+	}
+	
+	&__product {
+		
+		&_prev {
+			left: 0;
+		}
+		
+		&_next{
+			right: 0;
+			transform: rotateY(180deg);
+		}
+	}
+	
+	@media (max-width: $screen-lg) {
+		
+		&_prev {
+			left: 30px;
+		}
+		
+		&_next {
+			right: 30px;
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&__reading {
+			top: -60px;
+			
+			&_prev {
+				right: 55%;
+			}
+			
+			&_next {
+				right: 25%;
+			}
+		}
+	}
+}

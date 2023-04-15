@@ -1,0 +1,81 @@
+// === Variables ==
+
+// === Z-Index===
+$zIndexHeader: 1;
+$zIndexMenu: 2;
+
+
+
+// === Font Main===
+$fontMain: 'Roboto', Arial, Helvetica, sans-serif;
+
+
+// === Font Size ===
+$fontSizeOne: 16px;
+$fontSizeTwo: 12px;
+$fontSizeTree: 48px;
+$fontSizeFour: 24px;
+$fontSizeFive: 14px;
+$fontSizeSix: 22px;
+$fontSizeSeven: 80px;
+$fontSizeEight: 46px;
+$fontSizeNine: 36px;
+
+
+// === Font Line-Height ===
+$lineHeightOne: 27px;
+$lineHeightTwo: 16px;
+$lineHeightTree: 48px;
+$lineHeightFour: 30px;
+$lineHeightFive: 14px;
+$lineHeightSix: 20px;
+$lineHeightSeven: 22px;
+$lineHeightEight: 80px;
+$lineHeightNine: 40px;
+$lineHeightTen: 36px;
+
+
+// === Font Weight ===
+$fontWeightOne: 400;
+$fontWeightTwo: 700;
+
+
+// === Font Color ===
+$fontColorOne: #3E3E3E;
+$fontColorTwo: #0075FF;
+$fontColorTree: #ffffff;
+$fontColorFour: #000000;
+$fontColorFive: #9FADC2;
+$fontColorSix: #8F99A8;
+
+
+// === Background Color ===
+$bgColorOne: #ffffff;
+$bgColorTwo: transparent;
+$bgColorThree: #005ECC;
+$bgColorFour: #F7F8FF;
+$bgColorFive: #0075FF;
+
+
+// === Responsive breakpoints ===
+$screen-container: 1020px;
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 575px;
+
+@media (max-width: $screen-lg) {
+
+}
+
+@media (max-width: $screen-md) {
+
+}
+
+@media (max-width: $screen-sm) {
+
+}
+
+@media (max-width: $screen-xs) {
+
+}

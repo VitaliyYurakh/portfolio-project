@@ -1,0 +1,146 @@
+.card {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: max-content;
+	padding: 25px 15px;
+	border-radius: 5px;
+	background-color: $bgColor;
+	cursor: pointer;
+	
+	&:hover {
+		border-radius: 5px 5px 0 0;
+		box-shadow: 0 0 10px 0 rgb(0 0 0 / 25%);
+		z-index: 10;
+		
+		.card__front {
+			display: none;
+		}
+		
+		.card__back {
+			display: block;
+		}
+		
+		.card__info {
+			opacity: 1;
+			visibility: visible;
+		}
+		
+		.card__price:after {
+			display: none;
+		}
+	}
+	
+	&__wrapper {
+		position: absolute;
+		top: 25px;
+		left: 15px;
+		display: flex;
+		align-items: center;
+		width: 70px;
+		height: 35px;
+		border-radius: 5px 0 10px 0;
+		background: #FFFFFF;
+	}
+	
+	&__link {
+		flex: 1 1 50%;
+		height: 100%;
+	}
+	
+	&__img {
+		width: 100%;
+		height: 280px;
+		padding: 0 40px;
+		margin-bottom: 15px;
+		
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			
+			&.card__back {
+				display: none;
+			}
+		}
+	}
+	
+	&__description {
+		margin-bottom: 15px;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		color: #333333;
+	}
+	
+	&__price {
+		position: relative;
+		font-size: 15px;
+		line-height: 18px;
+		text-align: center;
+		color: #000000;
+		
+		&-last {
+			margin-left: 7px;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 15px;
+			text-decoration-line: line-through;
+			color: #C2C2C2;
+		}
+		
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -25px;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background: #EDEDED;
+		}
+		
+		&_no-after:after{
+			display: none;
+		}
+	}
+	
+	
+	&__back {
+		display: none;
+	}
+	
+	&__info {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		padding: 0 15px 25px;
+		background-color: $bgColor;
+		box-shadow: 0 10px 10px 0 rgb(0 0 0 / 25%);
+		border-radius: 0 0 5px 5px;
+	}
+	
+	&__wrap {
+		margin-bottom: 15px;
+	}
+	
+	&__switch {
+		margin-bottom: 5px;
+	}
+	
+	@media (max-width: $screen-lg) {
+		
+		&__img {
+			padding: 0 8px;
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&__img {
+			padding: 0 20px;
+		}
+	}
+}

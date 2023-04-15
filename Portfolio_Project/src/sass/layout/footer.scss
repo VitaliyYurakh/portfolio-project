@@ -1,0 +1,13 @@
+.footer {
+	min-height: 83px;
+	width: 100%;
+	padding: 48px 0;
+	background-color: $bgColorTwo;
+	font-size: 11px;
+	line-height: 15px;
+	color: #FFFFFF;
+	
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}

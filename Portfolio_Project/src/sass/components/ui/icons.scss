@@ -1,0 +1,22 @@
+.icons {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	
+	&__area {
+		background: url("../img/icons/clients/area.svg") center no-repeat;
+	}
+	
+	&__days {
+		background: url("../img/icons/clients/days.svg") center no-repeat;
+	}
+	
+	&__email {
+		background: url("../img/icons/social/email.svg") center no-repeat;
+	}
+	
+	&__instagram {
+		background: url("../img/icons/social/instagram.svg") center no-repeat;
+	}
+}

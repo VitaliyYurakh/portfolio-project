@@ -1,0 +1,17 @@
+.btn {
+	display: block;
+	padding: 10px 46px;
+	background: #333333;
+	border: 3px solid #D5D5D5;
+	border-radius: 30px;
+	font-size: 20px;
+	line-height: 35px;
+	color: $fontColorMain;
+	cursor: pointer;
+	transition: .15s ease-in-out;
+	
+	&:hover {
+		border: 3px solid $colorMain;
+		box-shadow: 0 0 5px 0 $colorMain inset, 0 0 10px 1px $colorMain;
+	}
+}

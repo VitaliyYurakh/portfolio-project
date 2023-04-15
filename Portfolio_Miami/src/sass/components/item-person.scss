@@ -1,0 +1,43 @@
+.item-person {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 calc(33.33% - 24px);
+	max-width: calc(33.33% - 24px);
+	
+	&__img {
+		width: 150px;
+		height: 150px;
+		margin-bottom: 32px;
+	}
+	
+	&__name {
+		font-weight: $fontWeightTwo;
+		font-size: $fontSizeFour;
+		line-height: $lineHeightFour;
+		text-align: center;
+		color:$fontColorTwo;
+		margin-bottom: 4px;
+	}
+	
+	&__job {
+		font-size: $fontSizeFive;
+		text-align: center;
+		color: $fontColorFive;
+		margin-bottom: 4px;
+	}
+	
+	&__info {
+		text-align: center;
+	}
+	
+	@media (max-width: $screen-sm) {
+		flex: 1 1 50%;
+		max-width: 50%;
+	}
+	
+	@media (max-width: $screen-xs) {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
+}

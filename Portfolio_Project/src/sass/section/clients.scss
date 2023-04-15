@@ -1,0 +1,38 @@
+.sec-clients {
+	min-height: 642px;
+	padding: 70px 0 354px;
+	background: url("../img/clients_bg.png") center bottom/contain no-repeat;
+	
+	&__wrapper {
+		padding: 0 12px;
+	}
+	
+	&__title {
+		margin-bottom: 12px;
+		font-family: 'Yeseva One', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #181818;
+	}
+	
+	&__block {
+		width: 32px;
+		margin: 0 auto 30px;
+	}
+	
+	@media (max-width: $screen-lg) {
+		background: none;
+		
+		&__wrapper {
+			padding: 0;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}

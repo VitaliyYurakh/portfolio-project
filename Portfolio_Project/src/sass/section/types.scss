@@ -1,0 +1,53 @@
+.sec-types {
+	min-height: 700px;
+	padding: 150px 0 311px;
+	
+	&__wrapper {
+		padding: 0 12px;
+	}
+	
+	&__title {
+		margin-bottom: 12px;
+		font-family: 'Yeseva One', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #181818;
+	}
+	
+	&__block {
+		height: 32px;
+		width: 32px;
+		margin: 0 auto 30px;
+	}
+	
+	@media (max-width: $screen-lg) {
+		padding: 83px 0 125px;
+	}
+	
+	@media (max-width: $screen-md) {
+		padding: 83px 0 0;
+		
+		&__wrapper {
+			padding: 0;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		padding: 83px 0 173px;
+		
+		&__title {
+			font-size: 22px;
+			line-height: 30px
+		}
+		
+		&__block {
+			height: 28px;
+			width: 28px;
+			margin: 0 auto 40px;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@mixin link-fonts {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 13px;
+	color: #FFFFFF;
+}
+
+@mixin section-title {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	
+	@media (max-width: $screen-sm) {
+		font-size: 27px;
+	}
+	
+	@media (max-width: $screen-xs) {
+		font-size: 24px;
+	}
+}
+
+@mixin section-divider {
+	width: 100px;
+	height: 2px;
+	background: $bgColorThird;
+}
+
+@mixin section-subtitle {
+	font-size: 15px;
+	line-height: 22px;
+	text-align: center;
+}
+
+@mixin footer-link {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	color: #111111;
+}
+
+

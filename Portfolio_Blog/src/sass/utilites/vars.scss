@@ -1,0 +1,24 @@
+// === Variables ==
+
+// === Font ===
+$fontSize: 16px;
+$fontColorMain: #21243D;
+$fontWeight: 400;
+$fontMain: 'Heebo', Ariel, Helvetica, sans-serif;
+$lineHeight: 24px;
+
+$fontColorLinkNav: #000;
+$fontColorLinkNavActive: #FF6464;
+
+// === Background Color ===
+$bgColor: #fff;
+
+// === Responsive breakpoints ===
+$screen-container: 900px;
+$screen-md: 900px;
+$screen-sm: 768px;
+$screen-xs: 575px;
+
+@media (max-width: $screen-xs) {
+
+}

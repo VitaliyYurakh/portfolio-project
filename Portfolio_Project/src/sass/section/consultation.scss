@@ -1,0 +1,20 @@
+.sec-consultation {
+	min-height: 725px;
+	padding-top: 106px;
+	background: url("../img/consultation_bg.png") left top/contain no-repeat;
+
+	&__wrapper {
+		padding: 0 10px;
+	}
+	
+	@media (max-width: $screen-lg) {
+		
+		&__wrapper {
+			padding: 0;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}

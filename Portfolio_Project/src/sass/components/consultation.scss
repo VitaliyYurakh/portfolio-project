@@ -1,0 +1,103 @@
+.consultation {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: minmax(72px, auto);
+	grid-auto-rows: minmax(72px, auto);
+	grid-gap: 38px 206px;
+	grid-template-areas: "catalog form"
+	                     ". help";
+	
+	&__catalog {
+		grid-area: catalog;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 500px;
+		padding-left: 130px;
+	}
+	
+	&__form {
+		grid-area: form;
+		padding-left: 11px;
+		min-height: 510px;
+	}
+	
+	&__help {
+		grid-area: help;
+		display: flex;
+		align-items: center;
+		padding: 0 32px;
+	}
+	
+	&__block  {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__number {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 58px;
+		min-height: 58px;
+		margin-right: 9px;
+		border-radius: 50%;
+		background-color: $bgColor;
+	}
+	
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 42px;
+		min-height: 42px;
+		border-radius: 50%;
+		background-color: $bgColorTree;
+		font-family: 'Yeseva One', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		color: $fontColorThird;
+	}
+	
+	&__text {
+		font-size: 14px;
+		line-height: 19px;
+		color: $fontColorOne;
+	}
+	
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 72px;
+		min-width: 72px;
+		margin-right: 25px;
+		border-radius: 50%;
+		background-color: $bgColorTree;
+	}
+	
+	&__description {
+		font-size: 18px;
+		line-height: 26px;
+		color: $fontColorTwo;
+		text-shadow: 0 3px 10px rgba(227, 184, 115, 0.15);
+	}
+	
+	@media (max-width: $screen-lg) {
+		grid-gap: 38px;
+		
+		&__catalog {
+			padding-left: 0;
+		}
+	}
+	
+	@media (max-width: $screen-md) {
+		grid-gap: 38px 0;
+		
+		&__help {
+			padding: 0;
+		}
+	}
+}

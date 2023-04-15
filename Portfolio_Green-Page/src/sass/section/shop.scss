@@ -1,0 +1,34 @@
+.sec-shop {
+	padding: 15px 0 80px;
+	
+	&__wrapper {
+		display: flex;
+		padding: 0 12px;
+	}
+	
+	&__aside {
+		position: relative;
+		flex: 1 0 275px;
+		max-width: 275px;
+		margin-right: 25px;
+	}
+	
+	&__content {
+		flex: 1 1 auto;
+	}
+	
+	@media (max-width: $screen-lg) {
+		
+		&__aside {
+			flex: 1 0 220px;
+			max-width: 220px;
+		}
+	}
+	
+	@media (max-width: $screen-md) {
+	
+		&__aside {
+			display: none;
+		}
+	}
+}

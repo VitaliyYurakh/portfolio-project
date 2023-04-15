@@ -1,0 +1,20 @@
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 230px;
+	background: #252525;
+	border-top: 2px solid #333333;
+	border-bottom: 2px solid #333333;
+	
+	&__title {
+		font-weight: 700;
+		font-size: 55px;
+		line-height: 35px;
+		text-align: center;
+	}
+	
+	@media (max-width: $screen-sm) {
+		height: 130px;
+	}
+}

@@ -1,0 +1,86 @@
+.sec-promo {
+	padding: 194px 0 208px;
+	margin-top: 83px;
+	background: url("../img/promo_bg.png") center center/cover no-repeat;
+	
+	&__wrapper {
+		padding: 0 44px;
+	}
+	
+	&__title {
+		margin-bottom: 19px;
+		font-size: 40px;
+		line-height: 53px;
+		text-transform: uppercase;
+		color: $fontColorThird;
+		
+		span {
+			color: $fontColorTwo;
+		}
+	}
+	
+	&__subtitle {
+		margin-bottom: 30px;
+		font-size: 22px;
+		line-height: 36px;
+		color: $fontColorThird;
+	}
+	
+	&__block {
+		display: flex;
+		align-items: center;
+		margin: 0 -10px;
+	}
+	
+	&__button {
+		margin: 0 10px;
+	}
+	
+	@media (max-width: $screen-lg) {
+		
+		&__wrapper {
+			padding: 0;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		min-height: 476px;
+		padding: 85px 0 61px;
+		
+		&__title {
+			margin-bottom: 16px;
+			font-size: 33px;
+			line-height: 40px;
+		}
+		
+		&__subtitle {
+			margin-bottom: 49px;
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		margin-top: 56px;
+		
+		&__title {
+			font-size: 21px;
+			line-height: 30px;
+		}
+		
+		&__subtitle {
+			font-size: 14px;
+			line-height: 19px;
+		}
+		
+		&__block {
+			flex-direction: column;
+			margin: -13px 0;
+		}
+		
+		&__button {
+			width: 100%;
+			margin: 13px 0;
+		}
+	}
+}

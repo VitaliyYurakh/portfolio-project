@@ -1,0 +1,15 @@
+.icons {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/tel.svg") center no-repeat;
+	
+	&_crown {
+		background: url("../img/icons/crown.svg") center no-repeat;
+	}
+	
+	&_close {
+		background: url("../img/icons/close.svg") center no-repeat;
+	}
+}

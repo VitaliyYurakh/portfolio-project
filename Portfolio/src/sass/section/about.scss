@@ -1,0 +1,31 @@
+.about {
+	padding-top: 175px;
+	
+	&__title {
+		margin: 60px 0 30px;
+		@include title;
+		
+		&:before {
+			@include line-before;
+		}
+		
+		&:after {
+			@include line-after;
+		}
+	}
+	
+	&__description {
+		font-size: 20px;
+		line-height: 35px;
+		text-indent: 25px;
+	}
+	
+	@media (max-width: $screen-sm) {
+		padding-top: 50px;
+		
+		&__description {
+			font-size: 18px;
+			line-height: 25px;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.footer {
+	height: 359px;
+	background: url("../img/footer_bg.jpg") center center/cover no-repeat;
+	
+	&__wrapper {
+		display: flex;
+		align-items: end;
+		justify-content: center;
+		width: 100%;
+		height: 359px;
+		padding: 32px 0;
+	}
+	
+	@media (max-width: $screen-sm) {
+		height: 206px;
+		
+		&__wrapper {
+			height: 206px;
+			padding: 24px 0;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.sort {
+	position: relative;
+	display: flex;
+	align-items: center;
+	
+	&__title {
+		margin-right: 15px;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		color: #000000;
+	}
+	
+	&__select {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 100;
+		display: none;
+		flex-direction: column;
+		width: 205px;
+		border-radius: 3px;
+		background: $bgColor;
+		
+		&.is-Show{
+			display: flex;
+		}
+	}
+	
+	&__link {
+		padding: 10px 15px;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		color: #555;
+		transition: all .1s;
+		
+		&:hover {
+			background: #ebebeb;
+			color: #5d7261;
+		}
+	}
+	
+}

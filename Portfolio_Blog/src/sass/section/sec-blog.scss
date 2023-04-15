@@ -1,0 +1,20 @@
+.sec-blog {
+	padding: 160px 0 50px;
+	
+	&__title {
+		margin-bottom: 55px;
+	}
+	
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	&__item {
+		margin-bottom: 32px;
+	}
+	
+	@media (max-width: $screen-sm) {
+		padding: 73px 0 50px;
+	}
+}

@@ -1,0 +1,29 @@
+.input {
+	width: 100%;
+	
+	&__field {
+		width: 100%;
+		height: 48px;
+		padding: 14px 17px;
+		background: $bgColorFour;
+		border: none;
+		border-radius: 8px;
+		font-size: $fontSizeFive;
+		line-height: $lineHeightSix;
+		color:$fontColorFour;
+		
+		&::placeholder {
+			font-size: $fontSizeFive;
+			line-height: $lineHeightSix;
+			color: $fontColorSix;
+		}
+		
+		&:hover {
+			outline: 2px solid #CCD0E0;
+		}
+		
+		&:focus {
+			outline: 2px solid #0075FF;
+		}
+	}
+}

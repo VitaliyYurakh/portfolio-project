@@ -1,0 +1,100 @@
+.switch {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	
+	&__item {
+		margin-right: 7px;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+		
+		&_product {
+			margin-right: 10px;
+		}
+	}
+	
+	&__value {
+		position: relative;
+		display: block;
+		height: 30px;
+		padding: 7px 7px;
+		border: 1px solid #666;
+		border-radius: 6px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+		color: #333;
+		cursor: pointer;
+		
+		&:hover {
+			border-radius: 0;
+			outline: 2px solid $bgColorThird;
+		}
+		
+		&:after {
+			content: '';
+			display: none;
+			position: absolute;
+			top: -2px;
+			right: -2px;
+			border: 7px solid transparent;
+			border-top: 7px solid #5d7261;
+			border-right: 7px solid #5d7261;
+		}
+		
+		&_color {
+			padding: 4px;
+		}
+		
+		&_big {
+			height: 40px;
+		}
+		
+		&_product {
+			height: 34px;
+			padding: 7px 10px;
+			font-size: 14px;
+		}
+	}
+	
+	&__color {
+		display: block;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #ccc;
+		
+		&_one {
+			background-color: #e2d9d9;
+		}
+		
+		&_two {
+			background-color: #f6eeee;
+		}
+	}
+	
+	&__input {
+		position: absolute;
+		left: -9999px;
+		opacity: 0;
+		visibility: hidden;
+		
+		&:checked ~ .switch__value {
+			border-radius: 0;
+			outline: 2px solid $bgColorThird;
+			
+			&:after {
+				display: block;
+			}
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&__item {
+			margin-bottom: 7px;
+		}
+	}
+}

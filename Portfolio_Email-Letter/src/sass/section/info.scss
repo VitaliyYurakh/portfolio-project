@@ -1,0 +1,50 @@
+.info{
+	position: relative;
+	
+	&__overlay {
+		position: absolute;
+		top: -107px;
+		width: 100%;
+		height: 381px;
+		background: linear-gradient(180.2deg, #1F1032 36.86%, rgba(31, 16, 50, 0) 99.82%);;
+	}
+	
+	&__block{
+		position: relative;
+		z-index: 5;
+		width: 100%;
+		min-height: 385px;
+		padding: 37px 42px 42px;
+		background: rgba(58, 32, 80, 0.7);
+		border: 3px solid #B0E31B;
+		border-radius: 30px;
+	}
+	
+	&__img {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 17px;
+	}
+	
+	&__description {
+		margin-bottom: 20px;
+	}
+	
+	&__text {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 108.84%;
+		text-align: center;
+		color: #FFFFFF;
+		
+		&_green {
+			color: #B0E31B;;
+		}
+	}
+	
+	&__actions {
+		display: flex;
+		justify-content: center;
+	}
+}

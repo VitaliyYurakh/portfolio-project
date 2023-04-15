@@ -1,0 +1,44 @@
+.site {
+
+  &__wrap {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-left: 306px;
+  }
+  
+  .aside {
+    flex: 1 0 306px;
+    max-width: 306px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 41px 95px 41px 71px;
+    background-color: $bgColorLightGrey;
+  }
+  
+  @media screen and (max-width: $screen-xl) {
+    
+    .main {
+      padding: 31px 31px;
+    }
+  }
+  
+  @media screen and (max-width: $screen-lg) {
+    
+    &__wrap{
+      padding-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: $screen-md) {
+    
+    .main {
+      padding: 20px;
+    }
+  }
+}

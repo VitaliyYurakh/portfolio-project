@@ -1,0 +1,33 @@
+.support {
+	position: relative;
+	padding: 48px 0;
+	
+	&__wrapper {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+	
+	&__block {
+		width: 228px;
+		height: 162px;
+		padding: 23px 25px 20px;
+		background: rgba(58, 32, 80, 0.7);
+		border: 3px solid #B0E31B;
+		border-radius: 20px;
+	}
+	
+	&__text {
+		margin-bottom: 28px;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 108.84%;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	
+	&__actions {
+		display: flex;
+		justify-content: center;
+	}
+}

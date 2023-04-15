@@ -1,0 +1,32 @@
+.path {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	&__block {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__link {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 15px;
+		color: #5D7261;
+		
+		&:hover {
+			color: #383838;
+		}
+	}
+	
+	&__separator {
+		margin: 0 5px;
+	}
+	
+	&__now {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 15px;
+		color: #111111;
+	}
+}

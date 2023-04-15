@@ -1,0 +1,16 @@
+.footer {
+	min-height: 400px;
+	padding-top: 50px;
+	background: $bgColorTwo;
+	
+	&-top {
+		min-height: 239px;
+		margin-bottom: 50px;
+	}
+	
+	&-bottom {
+		min-height: 64px;
+		padding: 17px;
+		border-top: 1px solid #E3E3E3;
+	}
+}

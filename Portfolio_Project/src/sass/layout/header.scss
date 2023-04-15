@@ -1,0 +1,12 @@
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+	min-height: 56px;
+	width: 100%;
+	padding: 23px 0;
+	background-color: $bgColorTwo;
+	font-size: 11px;
+	line-height: 15px;
+	color: #FFFFFF;
+}

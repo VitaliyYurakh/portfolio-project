@@ -1,0 +1,70 @@
+.shop-filter {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -4px;
+	
+	&__link {
+		position: relative;
+		margin: 0 4px 8px;
+		padding: 5px 28px 5px 10px;
+		border-radius: 15px;
+		border: 1px solid #ccc;
+		transition: .15s ease-in-out;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 15px;
+		
+		&:hover {
+			background: #ebebeb;
+			
+			.shop-filter__close {
+				background-color: #ccc;
+			}
+		}
+	}
+	
+	&__close {
+		position: absolute;
+		display: inline-block;
+		top: 0;
+		right: 0;
+		width: 17px;
+		height: 17px;
+		margin: 4px 5px;
+		border-radius: 50%;
+		transition: 0.15s background ease-in;
+		
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			width: 11px;
+			height: 1px;
+			top: 50%;
+			left: 3px;
+			transform: translateY(-50%) rotate(45deg);
+			background-color: #333;
+		}
+		
+		&:after {
+			transform: translateY(-50%) rotate(-45deg);
+		}
+	}
+	
+	&__clear {
+		margin: 0 4px 8px;
+		padding: 5px 10px 5px 10px;
+		border-radius: 15px;
+		border: 1px solid #ccc;
+		transition: .15s ease-in-out;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 15px;
+		background: #ebebeb;
+		
+		&:hover {
+			background: #ccc;
+		}
+	}
+}

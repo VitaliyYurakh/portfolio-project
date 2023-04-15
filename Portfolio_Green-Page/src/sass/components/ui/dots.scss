@@ -1,0 +1,50 @@
+.dots {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0 -5px;
+	list-style-type: none;
+	cursor: pointer;
+	
+	li {
+		margin: 0 5px;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		border: 2px solid #ffffff;
+		background: transparent;
+		cursor: pointer;
+		
+		&.slick-active {
+			background: white;
+		}
+		
+		button {
+			visibility: hidden;
+		}
+	}
+	
+	&_category {
+		bottom: -50px;
+		
+		li {
+			border: 2px solid #5D7261;
+			
+			&.slick-active {
+				background: #5D7261;
+			}
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		bottom: 20px;
+		
+		&_category {
+			bottom: -40px;
+		}
+	}
+}

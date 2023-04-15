@@ -1,0 +1,14 @@
+.title {
+	position: relative;
+	font-weight: $fontWeightTwo;
+	font-size: $fontSizeTree;
+	line-height: $lineHeightTree;
+	letter-spacing: -1.5px;
+	color: $fontColorFour;
+	text-align: center;
+	
+	@media (max-width: $screen-sm) {
+		font-size: $fontSizeNine;
+		line-height: $lineHeightTen;
+	}
+}

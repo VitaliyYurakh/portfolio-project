@@ -1,0 +1,54 @@
+.icons {
+	display: inline-block;
+	vertical-align: middle;
+	
+	&__refs {
+		width: 18px;
+		height: 18px;
+		
+		&_graph {
+			background: url("../img/icons/refs/graph.svg") center no-repeat;
+		}
+		
+		&_heart {
+			background: url("../img/icons/refs/heart.svg") center no-repeat;
+		}
+		
+		&_user {
+			background: url("../img/icons/refs/user.svg") center no-repeat;
+		}
+	}
+	
+	&__card {
+		width: 35px;
+		height: 35px;
+		
+		&_heart {
+			background: url("../img/icons/card/heart.svg") center no-repeat;
+		}
+		
+		&_compare {
+			background: url("../img/icons/card/compare.svg") center no-repeat;
+		}
+	}
+	
+	&__reading {
+		width: 24px;
+		height: 24px;
+		background: url("../img/icons/instagram.svg") center no-repeat;
+	}
+	
+	&__arrow {
+		width: 8px;
+		height: 14px;
+		transform: rotateY(180deg);
+		background: url("../img/icons/arrow.svg") center no-repeat;
+	}
+	
+	&__filter {
+		width: 13px;
+		height: 13px;
+		transform: rotate(-90deg);
+		background: url("../img/icons/arrow.svg") center no-repeat;
+	}
+}

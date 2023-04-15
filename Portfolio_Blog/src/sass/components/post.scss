@@ -1,0 +1,47 @@
+.post {
+	min-height: 266px;
+	padding: 24px 22px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	
+	&__title {
+		margin-bottom: 17px;
+	}
+	
+	&__info {
+		display: flex;
+		align-items: center;
+		margin-bottom: 11px;
+	}
+	
+	&__data {
+		position: relative;
+		margin-right: 60px;
+		font-size: 18px;
+		line-height: 26px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -30px;
+			display: inline-block;
+			height: 21px;
+			width: 1px;
+			background: #000000;
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		padding: 12px 20px 22px;
+		
+		&__title {
+			margin-bottom: 12px;
+		}
+		
+		&__info {
+			margin-bottom: 19px;
+		}
+	}
+}

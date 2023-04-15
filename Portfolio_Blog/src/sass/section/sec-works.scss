@@ -1,0 +1,14 @@
+.sec-works {
+	padding: 30px 0 80px;
+	
+	&__title {
+		margin-bottom: 38px;
+	}
+	
+	@media (max-width: $screen-sm) {
+		
+		&__title {
+			text-align: center;
+		}
+	}
+}

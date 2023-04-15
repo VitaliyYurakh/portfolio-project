@@ -1,0 +1,59 @@
+.refs {
+	display: flex;
+	align-items: center;
+	
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		margin-right: 87px;
+	}
+	
+	&__link {
+		@include link-fonts;
+		
+		&_mr17 {
+			margin-right: 17px;
+		}
+		
+		span {
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+		
+		&:hover {
+			
+			span {
+				text-decoration: underline;
+			}
+		}
+	}
+	
+	@media (max-width: $screen-lg) {
+		
+		&__wrapper {
+			margin-right: 27px;
+		}
+	}
+	
+	@media (max-width: $screen-md) {
+	
+		&__wrapper {
+			margin: 0 auto;
+		}
+		
+		&__link_mr17 {
+			margin-right: 100px;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		
+		&__wrapper {
+			display: none;
+		}
+		
+		&__link {
+			margin-left: auto;
+		}
+	}
+}

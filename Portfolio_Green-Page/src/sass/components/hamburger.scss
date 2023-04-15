@@ -1,0 +1,38 @@
+.hamburger {
+	width: 40px;
+	height: 38px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	
+	&__item {
+		position: relative;
+		display: block;
+		height: 3px;
+		width: 30px;
+		margin: 0 auto;
+		background: #ffffff;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: -8px;
+			display: block;
+			height: 3px;
+			width: 30px;
+			margin: 0 auto;
+			background: #ffffff
+		}
+		
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -8px;
+			display: block;
+			height: 3px;
+			width: 30px;
+			margin: 0 auto;
+			background: #ffffff
+		}
+	}
+}

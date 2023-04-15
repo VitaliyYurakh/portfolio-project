@@ -1,0 +1,31 @@
+.btn {
+	padding: 20px 46px;
+	border: 2px solid #0075FF;
+	border-radius: 8px;
+	background-color: $bgColorTwo;
+	font-weight: $fontWeightTwo;
+	line-height: $lineHeightFive;
+	color: $fontColorTwo;
+	cursor: pointer;
+	
+	&:hover {
+		background: $bgColorThree;
+		box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+		color: $bgColorOne;
+	}
+	
+	&:active {
+		box-shadow: 0 8px 14px rgba(0, 83, 181, 0.48);
+	}
+	
+	&_blue {
+		width: 100%;
+		background: #0075FF;
+		box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+		color: $bgColorOne;
+	}
+	
+	@media (max-width: $screen-xs) {
+		width: 100%;
+	}
+}

@@ -1,0 +1,16 @@
+.testimonials {
+	padding-top: 104px;
+	
+	&__icons {
+		width: 100%;
+		margin: 0 auto 56px;
+	}
+	
+	@media (max-width: $screen-sm) {
+		padding-top: 64px;
+		
+		&__icons {
+			margin-bottom: 29px;
+		}
+	}
+}

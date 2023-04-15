@@ -1,0 +1,36 @@
+.sec-maps {
+	position: relative;
+	min-height: 954px;
+	padding: 275px 0 65px;
+	background: url("../img/maps_bg.png") center center/cover no-repeat;
+
+	&__wrapper {
+		padding: 0 165px;
+	}
+	
+	&__form {
+		position: absolute;
+		top: -223px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	@media (max-width: $screen-lg) {
+		
+		&__wrapper {
+			padding: 0;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		min-height: max-content;
+		padding: 52px 0 49px;
+		background: $bgColorTwo;
+		
+		&__form {
+			position: static;
+			transform: none;
+			margin-bottom: 46px;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.shopping {
+	
+	&__link {
+		display: flex;
+		align-items: center;
+		
+		svg {
+			width: 22px;
+			height: 22px;
+			
+			&:hover {
+				
+				path {
+					fill: grey;
+				}
+			}
+		}
+	}
+	
+	&__quantity {
+		width: 20px;
+		height: 20px;
+		margin-left: 5px;
+		background: #5D7261;
+		border-radius: 50px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		color: #FFFFFF;
+		
+		&:hover {
+			background: #383838;
+		}
+	}
+}

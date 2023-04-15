@@ -1,0 +1,51 @@
+.nav {
+	
+	&__list {
+		display: flex;
+		margin: 0 -38px;
+		padding: 0;
+		list-style-type: none;
+		
+		&_menu {
+			flex-direction: column;
+			margin: 0;
+		}
+	}
+	
+	&__item {
+		margin: 0 38px;
+	}
+	
+	&__link {
+		font-size: 18px;
+		line-height: 35px;
+		color: rgba(255, 255, 255, .5);
+		transition: .15s ease-in-out;
+		
+		
+		&:hover,
+		&_active {
+			color: rgba(255, 255, 255, 1);
+		}
+	}
+	
+	@media (max-width: $screen-md) {
+		
+		&__list {
+			margin: 0 -20px;
+		}
+		
+		&__item {
+			margin: 0 20px;
+		}
+	}
+	
+	@media (max-width: $screen-sm) {
+		
+		&__item {
+			margin: 10px 0 0;
+		}
+		
+		
+	}
+}

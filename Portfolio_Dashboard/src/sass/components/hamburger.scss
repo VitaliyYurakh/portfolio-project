@@ -1,0 +1,29 @@
+.hamburger {
+	width: 22px;
+	cursor: pointer;
+	
+	&__line {
+		display: block;
+		height: 2px;
+		margin-bottom: 3px;
+		border-radius: 10px;
+		background: $bgColorGrey;
+		transition: .6s ease-in-out;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	&.is-Show {
+		
+		.hamburger__line {
+			
+			&:last-child,
+			&:first-child {
+				width: 17px;
+				transform: translateX(5px);
+			}
+		}
+	}
+}
